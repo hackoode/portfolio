@@ -20,11 +20,20 @@
             <li><a href="#Introduction">Introduction</a></li>
             <li><a href="#"onclick="loadContent('education.html')">Education</a></li>
             <li><a href="#"onclick="loadContent('experience.html')">Experience</a></li>
-            <li><a href="#"onclick="loadContent('skills.html')">Skills</a></li>
             <li><a href="#"onclick="loadContent('Projects.html')">Projects</a></li>
             <li><a href="#"onclick="loadContent('contact.html')">Contact</a></li>
         </ul>
     </nav>
+    <script>
+        function loadContent(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('content-container').innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        }
+    </script>
 
     <section id="introduction">
         <h2>About Me</h2>
