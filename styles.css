@@ -20,13 +20,15 @@ header {
     background-size: cover;
     background-position: center;
     text-align: right;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
 }
 
 nav {
     background-color: #444;
     padding: 10px;
-}
+    }
 
 nav ul {
     list-style: none;
@@ -51,6 +53,7 @@ section {
     padding: 20px;
     background-color: white;
     border-radius: 8px;
+    justify-content:space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
