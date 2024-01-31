@@ -1,0 +1,10 @@
+window.onload=function(){
+    Particles.int({
+        selector:'.background',
+        maxParticles:150,
+        connectParticles:'true',
+        speed:2,
+        minDistance:140,
+        sizeVariations:4
+    });
+}

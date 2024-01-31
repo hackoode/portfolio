@@ -28,7 +28,14 @@ body {
     font-family: 'YourCustomFont', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background:#000000;
+}
+.background{
+    position:absolute;
+    display:block;
+    top:0px;
+    left:0px;
+    z-index: 0;
 }
 
 /* Flexbox example */
@@ -45,19 +52,20 @@ body {
 }
 
 header {
-    background-image:url('Files/360_F_276080724_hltnCyDjcqAyRtLzDYo3T2jXbBtCD7fl.jpg');
     color: white;
-    background-size: cover;
-    background-position: center;
-    text-align: right;
+    text-align:center;
+    text-justify:space-between;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     padding: 20px;
 }
 
 nav {
-    background-color: #444;
+    background-color:transparent;
     padding: 10px;
+    position:fixed;
+    top: 0;
+    right: 0;
     }
 
 nav ul {
@@ -66,6 +74,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    
 }
 
 nav li {
@@ -79,10 +88,12 @@ nav a {
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
+    margin: 50px;
+    padding: 40px;
     background-color: white;
-    border-radius: 8px;
+    position:fixed;
+    right: 0;
+    border-radius: 50px;
     justify-content:space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
