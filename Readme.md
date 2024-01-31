@@ -1,1 +1,1 @@
-this is basiclly a testing
+This repository contains code for My portfolio.
