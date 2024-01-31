@@ -15,9 +15,11 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-image:url('Files/360_F_276080724_hltnCyDjcqAyRtLzDYo3T2jXbBtCD7fl.jpg');
     color: white;
-    text-align: center;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
     padding: 20px;
 }
 
