@@ -28,14 +28,15 @@ body {
     font-family: 'YourCustomFont', sans-serif;
     margin: 0;
     padding: 0;
-    background:#000000;
+    background: #000
+    ;
 }
 .background{
     position:absolute;
     display:block;
     top:0px;
     left:0px;
-    z-index: 0;
+    z-index: -1;
 }
 
 /* Flexbox example */
@@ -92,7 +93,7 @@ section {
     padding: 40px;
     background-color: white;
     position:fixed;
-    right: 0;
+    border-right-width: 20px;
     border-radius: 50px;
     justify-content:space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

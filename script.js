@@ -5,6 +5,7 @@ window.onload=function(){
         connectParticles:'true',
         speed:2,
         minDistance:140,
-        sizeVariations:4
+        sizeVariations:4,
+        color:'#ffffff'
     });
 }
