@@ -54,14 +54,6 @@ body {
     grid-gap: 20px;
 }
 
-header {
-    color: white;
-    text-align:center;
-    text-justify:space-between;
-    display: flex;
-    /*justify-content: space-between;*/
-    padding: 20px;
-}
 
 nav {
     background-color:transparent;
@@ -90,12 +82,12 @@ nav a {
     font-weight: bold;
 }
 
-section {
+#Home {
     margin: 50px;
     padding: 40px;
     background-color: white;
     position:fixed;
-    border-right-width: 20px;
+    left: 800px;
     border-radius: 50px;
     justify-content:space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -113,6 +105,17 @@ h2 {
 h3 {
     color: #555;
 }
+h4{
+    color:white
+    
+}
+#Name{
+    background-color: transparent;
+    position:fixed;
+    justify-content:space-between;
+
+}
+
 
 ul {
     list-style: none;
