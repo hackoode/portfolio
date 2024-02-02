@@ -85,16 +85,24 @@ nav a {
 #Home {
     margin: 50px;
     padding: 40px;
+    position: fixed;
     background-color: white;
-    position:fixed;
+    top: 110px;
     left: 800px;
     border-radius: 50px;
     justify-content:space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+#p1{
+    color:white;
+    font-size: 25px;
+}
 
 h2, h3 {
     color: #333;
+}
+.nav-link {
+    cursor: pointer;
 }
 
 h2 {
@@ -105,11 +113,18 @@ h2 {
 h3 {
     color: #555;
 }
-h4{
-    color:white
-    
+#Name h4 {
+    color: white;
+    display: flex;
+    padding: 20px;
+    font-size: 35px;
+    margin-bottom: 10px;
 }
 #Name{
+    margin:50px;
+    padding:50px;
+    flex-direction: column;
+    text-align: center;
     background-color: transparent;
     position:fixed;
     justify-content:space-between;

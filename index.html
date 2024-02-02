@@ -15,15 +15,15 @@
     <script type="text/javascript" src="script.js"></script>
    
 
-     <nav> 
+    <nav> 
         <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#"onclick="loadContent('education.html')">Education</a></li>
-            <li><a href="#"onclick="loadContent('experience.html')">Experience</a></li>
-            <li><a href="#"onclick="loadContent('Projects.html')">Projects</a></li>
-            <li><a href="#"onclick="loadContent('contact.html')">Contact</a></li>
+            <li><a href="#Home" class="nav-link" onclick="loadContent('home.html', 'Home')">Home</a></li>
+            <li><a href="#Education" class="nav-link" onclick="loadContent('education.html', 'Home')">Education</a></li>
+            <li><a href="#Experience" class="nav-link" onclick="loadContent('experience.html', 'Home')">Experience</a></li>
+            <li><a href="#Projects" class="nav-link" onclick="loadContent('projects.html', 'Home')">Projects</a></li>
+            <li><a href="#Contact" class="nav-link" onclick="loadContent('contact.html', 'Home')">Contact</a></li>
         </ul>
-     </nav>
+    </nav>
      <script>
         function loadContent(page) {
             fetch(page)
@@ -33,15 +33,21 @@
                 })
                 .catch(error => console.error('Error fetching content:', error));
         }
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
      </script>
           <section id="Name">
-            <h4>Yadunath R</h4>
-            <p>Software Engineer</p>
+            <h4>Hello, its Yadunath R</h4>
+            <p id  ="p1">Software Engineer</p>
          </section>
 
      <section id="Home">
         <h2>About Me</h2>
-        <p>Hello, I'm Yadunath, a passionate software engineer working in the Embedded domain.With a dynamic background spanning three years, I bring valuable expertise as an embedded software engineer. Having served distinguished roles at both L&T and Bosch, I possess a proven track record in developing innovative solutions and optimizing embedded systems. My experience includes a focus on precision and efficiency, ensuring seamless integration of software with cutting-edge technologies. I thrive in challenging environments, consistently delivering results that align with industry standards and exceed expectations.</p>
+        <p id="p2" >Hello, I'm Yadunath, a passionate software engineer working in the Embedded domain.With a dynamic background spanning three years, I bring valuable expertise as an embedded software engineer. Having served distinguished roles at both L&T and Bosch, I possess a proven track record in developing innovative solutions and optimizing embedded systems. My experience includes a focus on precision and efficiency, ensuring seamless integration of software with cutting-edge technologies. I thrive in challenging environments, consistently delivering results that align with industry standards and exceed expectations.</p2>
      </section>
 
     
