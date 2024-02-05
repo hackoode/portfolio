@@ -18,41 +18,97 @@
     <nav> 
         <ul>
             <li><a href="#Home" class="nav-link" onclick="loadContent('home.html', 'Home')">Home</a></li>
-            <li><a href="#Education" class="nav-link" onclick="loadContent('education.html', 'Home')">Education</a></li>
-            <li><a href="#Experience" class="nav-link" onclick="loadContent('experience.html', 'Home')">Experience</a></li>
-            <li><a href="#Projects" class="nav-link" onclick="loadContent('projects.html', 'Home')">Projects</a></li>
-            <li><a href="#Contact" class="nav-link" onclick="loadContent('contact.html', 'Home')">Contact</a></li>
+            <li><a href="#Education" class="nav-link" onclick="loadContent('education.html', 'Education')">Education</a></li>
+            <li><a href="#Experience" class="nav-link" onclick="loadContent('experience.html', 'Experience')">Experience</a></li>
+            <li><a href="#Projects" class="nav-link" onclick="loadContent('projects.html', 'Projects')">Projects</a></li>
+            <li><a href="#Contact" class="nav-link" onclick="loadContent('contact.html', 'Contact')">Contact</a></li>
         </ul>
     </nav>
-     <script>
-        function loadContent(page) {
-            fetch(page)
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('content-container').innerHTML = html;
-                })
-                .catch(error => console.error('Error fetching content:', error));
-        }
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-     </script>
+    
+    
           <section id="Name">
             <h4>Hello, its Yadunath R</h4>
             <p id  ="p1">Software Engineer</p>
          </section>
 
      <section id="Home">
+        <div id="home-content" class="content-container">
         <h2>About Me</h2>
         <p id="p2" >Hello, I'm Yadunath, a passionate software engineer working in the Embedded domain.With a dynamic background spanning three years, I bring valuable expertise as an embedded software engineer. Having served distinguished roles at both L&T and Bosch, I possess a proven track record in developing innovative solutions and optimizing embedded systems. My experience includes a focus on precision and efficiency, ensuring seamless integration of software with cutting-edge technologies. I thrive in challenging environments, consistently delivering results that align with industry standards and exceed expectations.</p2>
+        </div>
      </section>
+     <section id="Education">
+        <h2>Education</h2>
+    
+        <div class="education-entry">
+            <h3>Electrical and Electronics Engineering</h3>
+            <p>Kerala University</p>
+            <p>Gpa 9.34/10</p>
+        </div>
+    
+        <!-- Add more education entries as needed -->
+    </section>
+    
+    <section id="Contact">
+        <div class="fcf-body">
+
+            <div id="fcf-form">
+            <h3 class="fcf-h3">Contact us</h3>
+        
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Your name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                </div>
+        
+        
+            </form>
+            </div>
+        
+        </div>
+    </section>
+    
 
     
     <footer>
         <p>&copy; 2022 Yadunath. All rights reserved.</p>
     </footer>
+    <script>
+        function loadContent(sectionId, navText) {
+            // You can perform additional actions if needed
+            console.log('Loading content for section:', sectionId);
+            
+            // Scroll to the target section
+            scrollToSection(sectionId);
+        }
+    
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>
