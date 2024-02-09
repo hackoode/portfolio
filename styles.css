@@ -485,7 +485,7 @@ a:focus {
 
 .about .progress .progress-bar {
     width: 0px;
-    background-color:red;
+    background:white;
     border-radius: 10px;
     transition: 2s;
 }
