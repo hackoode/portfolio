@@ -1,6 +1,4 @@
-/*******************************/
-/********* General CSS *********/
-/*******************************/
+
 body {
     font-family: 'YourCustomFont', sans-serif;
     margin: 0;
@@ -117,11 +115,6 @@ a:focus {
     100% { transform: rotate(360deg); }
 }
 
-
-
-/**********************************/
-/*********** Nav Bar CSS **********/
-/**********************************/
 .navbar {
     position: fixed;
     transition: .5s;
@@ -195,10 +188,6 @@ a:focus {
     }
 }
 
-
-/*******************************/
-/********** Hero CSS ***********/
-/*******************************/
 .hero {
     position: relative;
     width: 100%;
@@ -372,66 +361,7 @@ a:focus {
 }
 
 
-/*******************************/
-/******* Section Header ********/
-/*******************************/
-.section-header {
-    position: relative;
-    margin-bottom: 45px;
-}
 
-.section-header p {
-    display: inline-block;
-    margin: 0 30px;
-    margin-bottom: 10px;
-    padding-left: 15px;
-    position: relative;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: #ffffff;
-}
-
-.section-header p::before {
-    position: absolute;
-    content: "";
-    height: 3px;
-    top: 11px;
-    right: 0;
-    left: -30px;
-    background: #EF233C;
-    z-index: -1;
-}
-
-.section-header p::after {
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 3px;
-    top: 11px;
-    left: 3px;
-    background: #EF233C;
-    z-index: 1;
-}
-
-.section-header h2 {
-    margin: 0;
-    position: relative;
-    font-size: 45px;
-    font-weight: 700;
-}
-
-@media (max-width: 767.98px) {
-    .section-header h2 {
-        font-size: 30px;
-    }
-}
-
-
-/*******************************/
-/********** About CSS **********/
-/*******************************/
 .about {
     position: relative;
     width: 100%;
@@ -498,9 +428,7 @@ a:focus {
 }
 
 
-/*******************************/
-/******* Experience CSS ********/
-/*******************************/
+
 .experience {
     position: relative;
     padding: 45px 0 15px 0;
@@ -676,10 +604,7 @@ a:focus {
     }
 }
 
-
-/*******************************/
-/********* Service CSS *********/
-/*******************************/
+/*
 .service {
     position: relative;
     width: 100%;
@@ -759,7 +684,7 @@ a:focus {
 
 /*******************************/
 /******** Portfolio CSS ********/
-/*******************************/
+/*******************************//*
 .portfolio {
     position: relative;
     padding: 45px 0 15px 0;
@@ -862,156 +787,8 @@ a:focus {
     box-shadow: inset 0 0 0 0 #EF233C;
     border-color: #EF233C;
 }
+*/
 
-
-/*******************************/
-/********* Banner CSS **********/
-/*******************************/
-.banner {
-    position: relative;
-    width: 100%;
-    margin: 45px 0;
-    padding: 90px 0;
-    background: #EF233C;
-}
-
-.banner .container {
-    max-width: 750px;
-    text-align: center;
-}
-
-.banner .section-header {
-    margin-bottom: 20px;
-}
-
-.banner .section-header p {
-    color: #414141;
-    background: transparent;
-}
-
-.banner .section-header p::after {
-    display: none;
-}
-
-.banner .section-header h2 {
-    color: #ffffff;
-}
-
-.banner .section-header h2 span {
-    color: #414141;
-    font-size: 50px;
-}
-
-.banner .banner-text p {
-    font-size: 18px;
-    color: #ffffff;
-}
-
-.banner .banner-text .btn {
-    margin-top: 15px;
-    color: #EF233C;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-}
-
-.banner .banner-text .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
-}
-
-
-
-
-/*******************************/
-/******* Testimonial CSS *******/
-/*******************************/
-.testimonial {
-    position: relative;
-    margin: 45px 0;
-    padding: 90px 0;
-    background: #EF233C;
-}
-
-.testimonial .container {
-    max-width: 900px;
-}
-
-.testimonial .testimonial-icon {
-    margin-bottom: 45px;
-    text-align: center;
-}
-
-.testimonial .testimonial-icon i {
-    font-size: 60px;
-    color: rgba(256, 256, 256, .5);
-}
-
-.testimonial .testimonial-item {
-    position: relative;
-    margin: 0 15px;
-    text-align: center;
-}
-
-.testimonial .testimonial-img {
-    position: relative;
-    margin-bottom: 15px;
-    z-index: 1;
-}
-
-.testimonial .testimonial-item img {
-    margin: 0 auto;
-    width: 120px;
-    padding: 10px;
-    border: 5px dotted #ffffff;
-    border-radius: 100px;
-}
-
-.testimonial .testimonial-text {
-    position: relative;
-    margin-top: -70px;
-    padding: 65px 35px 30px 35px;
-    text-align: center;
-    background: #ffffff;
-    border-radius: 500px;
-}
-
-.testimonial .testimonial-item p {
-    font-size: 18px;
-    font-style: italic;
-}
-
-.testimonial .testimonial-text h3 {
-    color: #EF233C;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.testimonial .testimonial-text h4 {
-    color: #666666;
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
-.testimonial .owl-dots {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.testimonial .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(256, 256, 256, .5);
-}
-
-.testimonial .owl-dot.active {
-    background: #ffffff;
-}
 
 
 /*******************************/
@@ -1094,91 +871,25 @@ a:focus {
 }
 
 
-/*******************************/
-/*********** Blog CSS **********/
-/*******************************/
-.blog {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.blog .blog-item {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.blog .blog-img {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.blog .blog-img img {
-    width: 100%;
-    transition: .5s;
-}
-
-.blog .blog-item:hover img {
-    transform: scale(1.1);
-}
-
-.blog .blog-text {
-    position: relative;
-    padding: 30px;
-    border-right: 1px solid rgba(0, 0, 0, .07);
-    border-bottom: 1px solid rgba(0, 0, 0, .07);
-    border-left: 1px solid rgba(0, 0, 0, .07);
-}
-
-.blog .blog-text h2 {
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.blog .blog-text p {
-    margin-bottom: 10px;
-}
-
-.blog .blog-item a.btn {
-    margin-top: 10px;
-    padding: 8px 15px;
-}
-
-.blog .blog-item a.btn i {
-    margin-left: 5px;
-}
-
-.blog .blog-meta {
-    position: relative;
-    display: flex;
-    margin-bottom: 15px;
-}
-
-.blog .blog-meta p {
-    margin: 0 10px 0 0;
-    font-size: 13px;
-}
-
-.blog .blog-meta i {
-    color: #414141;
-    margin-right: 5px;
-}
-
-.blog .blog-meta p:last-child {
-    margin: 0;
-}
-
 
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
-    background: #EF233C;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
 }
 
+.footer p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/*
 .footer .container-fluid {
     padding: 60px 0 0 0;
 }
@@ -1300,3 +1011,4 @@ a:focus {
         padding: 0 5px;
     }
 }
+*/
