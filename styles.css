@@ -410,15 +410,17 @@ a:focus {
 .about .progress {
     height: 10px;
     border-radius: 10px;
-    background:grey;
+    background: rgb(87, 86, 86);
 }
 
 .about .progress .progress-bar {
-    width: 0px;
-    background:white;
+    width: 0;
+    height: 100%;
+    background: rgb(175, 216, 236);
     border-radius: 10px;
-    transition: 2s;
+    transition: width 2s ease;
 }
+
 
 
 @media (max-width: 991.98px) {
@@ -432,6 +434,11 @@ a:focus {
 .experience {
     position: relative;
     padding: 45px 0 15px 0;
+}
+.experience h2{
+    text-align: center;
+    margin-bottom:40px;
+    font-size: 40px;
 }
 
 .experience .timeline {
