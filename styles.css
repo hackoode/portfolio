@@ -515,7 +515,7 @@ a:focus {
     content: '';
     position: absolute;
     width: 2px;
-    background: #EF233C;
+    background: white;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -524,13 +524,14 @@ a:focus {
 
 .experience .timeline .timeline-item {
     position: relative;
-    background: inherit;
-    width: 50%;
+    background: gray;
+    width: 30%;
+    border-radius: 30px;
     margin-bottom: 30px;
 }
 
 .experience .timeline .timeline-item.left {
-    left: 0;
+    left: 275px;
     padding-right: 30px;
 }
 
@@ -545,15 +546,15 @@ a:focus {
     width: 16px;
     height: 16px;
     top: 48px;
-    right: -8px;
+    right: -6px;
     background: #ffffff;
-    border: 2px solid #EF233C;
+    border: 2px solid red;
     border-radius: 16px;
     z-index: 1;
 }
 
 .experience .timeline .timeline-item.right::after {
-    left: -8px;
+    left: -9px;
 }
 
 .experience .timeline .timeline-item::before {
@@ -579,7 +580,8 @@ a:focus {
     top: 44px;
     font-size: 16px;
     font-weight: 600;
-    color: #EF233C;
+    color: white;
+    text-justify: auto;
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
@@ -597,7 +599,8 @@ a:focus {
 
 .experience .timeline .timeline-text {
     padding: 30px;
-    background: #ffffff;
+    text-align: center;
+    background: transparent;
     position: relative;
     border-right: 5px solid #dddddd;
     box-shadow: 0 0 60px rgba(0, 0, 0, .08);
@@ -1016,20 +1019,16 @@ a:focus {
 /*******************************/
 .contact {
     position: relative;
-    width: 100%;
     margin: 45px 0;
-    background: #EF233C;
+    width:100%;
+    background: transparent;
 }
 
-.contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
-    background-size: contain;
-}
 
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
-    background: #EF233C;
+    background: transparent;
 }
 
 .contact .contact-form input {
@@ -1063,7 +1062,7 @@ a:focus {
 
 .contact .contact-form .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: black;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -1079,7 +1078,7 @@ a:focus {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 30px;
     font-style: italic;
     color: #ffffff;
 }
