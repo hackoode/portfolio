@@ -5,110 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        
+       
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Yadunath's Portfolio</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
     <div id="particles-js"></div>
     <script type="text/javascript" src="particles.js"></script>
     <script type="text/javascript" src="script.js"></script>
-   
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarCollapse"style="left: auto; text-align: right;">
+              <div class="navbar-nav ml-auto">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
+                <a href="#experience" class="nav-item nav-link">Experience</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
 
-    <nav> 
-        <ul>
-            <li><a href="#Home" class="nav-link" onclick="loadContent('home.html', 'Home')">Home</a></li>
-            <li><a href="#Education" class="nav-link" onclick="loadContent('education.html', 'Education')">Education</a></li>
-            <li><a href="#Experience" class="nav-link" onclick="loadContent('experience.html', 'Experience')">Experience</a></li>
-            <li><a href="#Projects" class="nav-link" onclick="loadContent('projects.html', 'Projects')">Projects</a></li>
-            <li><a href="#Contact" class="nav-link" onclick="loadContent('contact.html', 'Contact')">Contact</a></li>
-        </ul>
-    </nav>
-    
-    
-          <section id="Name">
-            <h4>Hello, its Yadunath R</h4>
-            <p id  ="p1">Software Engineer</p>
-         </section>
+                <a href="#review" class="nav-item nav-link">Review</a>
 
-     <section id="Home">
-        <div id="home-content" class="content-container">
-        <h2>About Me</h2>
-        <p id="p2" >Hello, I'm Yadunath, a passionate software engineer working in the Embedded domain.With a dynamic background spanning three years, I bring valuable expertise as an embedded software engineer. Having served distinguished roles at both L&T and Bosch, I possess a proven track record in developing innovative solutions and optimizing embedded systems. My experience includes a focus on precision and efficiency, ensuring seamless integration of software with cutting-edge technologies. I thrive in challenging environments, consistently delivering results that align with industry standards and exceed expectations.</p2>
-        </div>
-     </section>
-     <section id="Education">
-        <h2>Education</h2>
-    
-        <div class="education-entry">
-            <h3>Electrical and Electronics Engineering</h3>
-            <p>Kerala University</p>
-            <p>Gpa 9.34/10</p>
-        </div>
-    
-        <!-- Add more education entries as needed -->
-    </section>
-    
-    <section id="Contact">
-        <div class="fcf-body">
 
-            <div id="fcf-form">
-            <h3 class="fcf-h3">Contact us</h3>
-        
-            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-                
-                <div class="fcf-form-group">
-                    <label for="Name" class="fcf-label">Your name</label>
-                    <div class="fcf-input-group">
-                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+           </div>
+       </div>
+    </div>
+    
+    
+    <div class="hero" id="home">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <p>I'm</p>
+                            <h1>Yadunath R</h1>
+                            <div class="typed-text">Embedded Developer, Electrical Engineer</div>
+                        </div>
+                        <div class="hero-btn">
+                            <a class="btn" href="">Resume</a>
+                            <a class="btn" href="">Contact Me</a>
+                        </div>
                     </div>
                 </div>
-        
-                <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">Your email address</label>
-                    <div class="fcf-input-group">
-                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                    </div>
-                </div>
-        
-                <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">Your message</label>
-                    <div class="fcf-input-group">
-                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                    </div>
-                </div>
-        
-                <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-                </div>
-        
-        
-            </form>
+               
             </div>
-        
         </div>
-    </section>
-    
+    </div>
+
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <h2>3 Years Experience</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Have served distinguished roles at both L&T and Bosch, I possess a proven track record in developing innovative solutions and optimizing embedded systems. 
+                                </p>
+                            </div>
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p>Embedded C</p><p>85%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>C++</p><p>95%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>C#</p><p>90%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>html & CSS</p><p>85%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- About End -->
 
     
     <footer>
         <p>&copy; 2022 Yadunath. All rights reserved.</p>
     </footer>
-    <script>
-        function loadContent(sectionId, navText) {
-            // You can perform additional actions if needed
-            console.log('Loading content for section:', sectionId);
-            
-            // Scroll to the target section
-            scrollToSection(sectionId);
-        }
+            <!-- Pre Loader -->
+            <div id="loader" class="show">
+                <div class="loader"></div>
+            </div>
     
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    </script>
+            
+            <!-- JavaScript Libraries -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/wow/wow.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/typed/typed.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="lib/isotope/isotope.pkgd.min.js"></script>
+            <script src="lib/lightbox/js/lightbox.min.js"></script>
+            
+            <!-- Contact Javascript File -->
+            <script src="mail/jqBootstrapValidation.min.js"></script>
+            <script src="mail/contact.js"></script>
+    
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
+   
 </body>
 </html>
